@@ -1,3 +1,4 @@
+import aadd from '@/img/next.svg';
 import { Sun } from 'lucide-react';
 import Image from 'next/image';
 
@@ -31,7 +32,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className="md:w-1/3">
-                        <Image src="/placeholder.svg" alt="Profile" width={300} height={300} className="rounded-lg shadow-lg" />
+                        <Image src={aadd} alt="Profile" width={300} height={300} className="rounded-lg shadow-lg" />
                     </div>
                 </section>
 
