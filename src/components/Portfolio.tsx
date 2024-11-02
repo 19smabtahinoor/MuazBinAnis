@@ -1,5 +1,3 @@
-import aadd from '@/img/next.svg';
-import { Sun } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Portfolio() {
@@ -14,26 +12,23 @@ export default function Portfolio() {
                         <li><a href="#" className="hover:text-blue-600">Testimonials</a></li>
                         <li><a href="#" className="hover:text-blue-600">Contact</a></li>
                     </ul>
-                    <button className="p-2 rounded-full hover:bg-gray-200">
-                        <Sun className="h-5 w-5" />
+                    <button className="p-2 rounded-full hover:bg-gray-200 hover:text-black bg-black text-white text-sm">
+                        Get Resume
                     </button>
                 </nav>
             </header>
 
             <main className="container mx-auto px-4 py-8">
-                <section className="flex flex-col md:flex-row items-center justify-between mb-16">
-                    <div className="md:w-1/2 mb-8 md:mb-0">
+                <section className="flex flex-col md:flex-row items-center justify-center mb-16">
+                    <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col items-center">
                         <h1 className="text-4xl font-bold mb-4">Hi, I&apos;m X 👋</h1>
-                        <p className="text-lg mb-4">I&apos;m a full-stack developer. I can help you build a product, feature or website. Take a look at my work.</p>
+                        <p className="text-lg mb-4 text-center">I&apos;m a full-stack developer. I can help you build a product, feature or website. Take a look at my work.</p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-blue-600 hover:underline">Github</a>
-                            <a href="#" className="text-blue-600 hover:underline">Twitter</a>
                             <a href="#" className="text-blue-600 hover:underline">LinkedIn</a>
+                            <a href="#" className="text-blue-600 hover:underline">Research Gate</a>
                         </div>
                     </div>
-                    <div className="md:w-1/3">
-                        <Image src={aadd} alt="Profile" width={300} height={300} className="rounded-lg shadow-lg" />
-                    </div>
+
                 </section>
 
                 <section className="mb-16">
@@ -83,7 +78,7 @@ export default function Portfolio() {
 
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold mb-8 text-center">Projects</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8">
                         {[1, 2, 3].map((project) => (
                             <div key={project} className="bg-gray-100 p-6 rounded-lg">
                                 <Image src="/placeholder.svg" alt={`Project ${project}`} width={500} height={300} className="mb-4 rounded" />
